@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Remoto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 20px 15px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background: rgba(30, 30, 50, 0.9);
+            border-radius: 15px;
+            padding: 25px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #ff6b6b;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .story-text {
+            font-size: 16px;
+            text-align: justify;
+            margin-bottom: 20px;
+            color: #d0d0d0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .dialogue {
+            font-style: italic;
+            color: #4ecdc4;
+            margin: 15px 0;
+            padding-left: 15px;
+            border-left: 3px solid #4ecdc4;
+            background: rgba(78, 205, 196, 0.1);
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .final-line {
+            color: #ff9f43;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 17px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Animação sutil */
+        .container {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsividade adicional para telas muito pequenas */
+        @media (max-width: 360px) {
+            body {
+                padding: 15px 10px;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .story-text {
+                font-size: 15px;
+            }
+        }
+
+        /* Efeito de hover para dispositivos que suportam */
+        @media (hover: hover) {
+            .container:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+                transition: all 0.3s ease;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Controle Remoto</h1>
+        
+        <div class="story-text">
+            Sua cabeça doía fortemente. Era difícil pensar. Uma canção, misturada a outros sons, que parecia vir de dentro de sua cabeça, separava seu corpo de seu juízo.
+        </div>
+        
+        <div class="story-text">
+            Ele lutou com todas as forças para manter sua sanidade, até perder o controle de seus músculos.
+        </div>
+        
+        <div class="dialogue">
+            - Senhor, implante binaural ativado com sucesso. *
+        </div>
+        
+        <div class="dialogue">
+            - Excelente! - disse o comandante. - Ordene que elimine o alvo, e se desconecte.
+        </div>
+        
+        <div class="story-text">
+            Guiado por uma voz, ele soltou o volante e disparou na testa do Cardeal, sentado no banco de trás. Então, parou o carro, e disparou na própria cabeça.
+        </div>
+        
+        <div class="dialogue">
+            - Senhor, alvo abatido e implante desconectado. Viva a revolução!
+        </div>
+    </div>
+</body>
+</html>
